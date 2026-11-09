@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "FT240X-USB") (type "KiCad") (uri "${KIPRJMOD}/FT240X-USB.pretty") (options "") (descr ""))
+)
