@@ -4070,7 +4070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FT240X-USB:PinHeader_2x09_P2.54mm_Vertical_SMD_Hybrid"
+		(property "Footprint" "FT240X-USB:custom_pinheader"
 			(at 214.63 100.33 0)
 			(hide yes)
 			(show_name no)
