@@ -274,7 +274,7 @@
 			(uuid "2f65607b-d4b2-4855-9c9d-bc17f28e180f")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/C_0805_2012Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -413,7 +413,7 @@
 			(uuid "460ac91b-35d5-4563-9fc1-f9269d311a70")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -870,7 +870,7 @@
 			(uuid "7f2682e3-1c95-46e3-a7f9-d97f9c0f5a54")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/USB_Mini-B_TE_1734035_Horizontal.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/USB_Mini-B_TE_1734035_Horizontal.step"
 			(offset
 				(xyz 0 -6 2)
 			)
@@ -1331,7 +1331,7 @@
 			(uuid "22ffd8c9-f17b-4870-bdb0-02aa0afff153")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/SSOP-24_3.9x8.7mm_P0.635mm.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/SSOP-24_3.9x8.7mm_P0.635mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1470,7 +1470,7 @@
 			(uuid "28c83cd5-ace9-4461-a1e5-223d7de1a719")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1609,7 +1609,7 @@
 			(uuid "dba05bdf-3fc5-42cd-a689-edb656bbeceb")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/L_0805_2012Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/L_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1753,7 +1753,7 @@
 			(uuid "01cf4441-0d95-423e-8834-ae9460902b00")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1765,13 +1765,14 @@
 			)
 		)
 	)
-	(footprint "FT240X-USB:custom_pinheader"
+	(footprint "FT240X-USB:CustomPinHeader_02x09_P2.54mm_Hybrid"
 		(layer "B.Cu")
 		(uuid "596f9d24-bd64-45d4-b0df-5344683cc151")
 		(at 83.312 15.24 -90)
 		(property "Reference" "J1"
 			(at 0.024756 13.267378 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "a91f11b1-eef4-43d0-9318-6a38a5ea8466")
 			(effects
 				(font
@@ -2754,7 +2755,7 @@
 			(uuid "4d158d9d-101a-4c22-8b9e-dc62a10d6275")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/custom_pinheader.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/CustomPinHeader_02x09_P2.54mm_Hybrid.step"
 			(offset
 				(xyz -3.81 0 0)
 			)
@@ -2898,7 +2899,7 @@
 			(uuid "79c556c5-b3e2-41d2-9e68-05ade8d7a58a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3042,7 +3043,7 @@
 			(uuid "8e492bd8-1633-4f3e-91c5-128aeb16b5f6")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3186,7 +3187,7 @@
 			(uuid "396a410b-9a4b-45fd-9b28-6657313e5a8b")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3330,7 +3331,7 @@
 			(uuid "af5a9caf-d2d5-4876-abd1-d3118f637feb")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/FT240-USB.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/FT240X-USB.3dshapes/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)

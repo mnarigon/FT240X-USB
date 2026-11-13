@@ -1,20 +1,22 @@
 #!/usr/bin/python
 #
-# -- Install conda to $env:USERPROFILE\Miniforge (one-time)
+# -- Windows Powershell install conda to $env:USERPROFILE\Miniforge (one-time)
 #   curl.exe -L -o miniforge.exe https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe
 #   Start-Process -Wait -FilePath miniforge.exe -ArgumentList @("/InstallationType=JustMe", "/RegisterPython=0", "/NoRegistry=1", "/NoScripts=0", "/S", "/D=$env:USERPROFILE\Miniforge")
 #
-# -- Activate conda
+# -- Windows Powershell activate conda
 #   . $env:USERPROFILE\Miniforge\shell\condabin\conda-hook.ps1
 #   conda activate
 #
-# -- Install cadquery (one-time)
+# -- Windows Powershell install cadquery (one-time)
 #   conda create -n cq
 #   conda activate cq
 #   mamba install cadquery
 #
-# -- generate custom pinheader
-#   python pinheader.py
+# -- Windows Powershell generate custom pinheader
+#   . $env:USERPROFILE\Miniforge\shell\condabin\conda-hook.ps1
+#   conda activate cq
+#   python CustomPinHeader_02x09_P2.54mm_Hybrid.py
 #
 
 import cadquery as cq
@@ -124,14 +126,14 @@ def make_SMD_pins():
     return pins
 
 if __name__ == "__main__":
-    assembly = cq.Assembly(name = "custom_pinheader")
+    assembly = cq.Assembly()
     base = make_base()
-    assembly.add(base, color = body_color, name = "base0")
-    assembly.add(base.translate((row_pitch, 0.0, 0.0)), color = body_color, name = "base1")
+    assembly.add(base, color = body_color)
+    assembly.add(base.translate((row_pitch, 0.0, 0.0)), color = body_color)
     THT_pins = make_THT_pins()
-    assembly.add(THT_pins, color = pins_color, name = "THT_pins0")
-    assembly.add(THT_pins.translate((row_pitch, 0.0, 0.0)), color = pins_color, name = "THT_pins1")
+    assembly.add(THT_pins, color = pins_color)
+    assembly.add(THT_pins.translate((row_pitch, 0.0, 0.0)), color = pins_color)
     SMD_pins = make_SMD_pins()
-    assembly.add(SMD_pins, color = pins_color, name = "SMD_pins0")
-    assembly.add(SMD_pins.rotate((0, 0, 0), (0, 0, 1), 180).translate((row_pitch, 0.0, 0.0)), color = pins_color, name = "SMD_pins1")
-    assembly.export("custom_pinheader.step", "STEP")
+    assembly.add(SMD_pins, color = pins_color)
+    assembly.add(SMD_pins.rotate((0, 0, 0), (0, 0, 1), 180).translate((row_pitch, 0.0, 0.0)), color = pins_color)
+    assembly.export("CustomPinHeader_02x09_P2.54mm_Hybrid.step", "STEP")
