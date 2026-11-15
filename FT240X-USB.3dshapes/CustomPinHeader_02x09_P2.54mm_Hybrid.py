@@ -1,4 +1,27 @@
 #!/usr/bin/python
+
+# -- this script is derived from:
+# -- cadquery script for generating QFP/SOIC/SSOP/TSSOP models in STEP AP214
+# -- that was:
+# -- Copyright (c) 2015, Maurice, https://launchpad.net/~easyw
+# -- All trademarks within this guide belong to their legitimate owners.
+# --
+# -- This program is free software; you can redistribute it and/or modify
+# -- it under the terms of the GNU Lesser General Public License (LGPL)
+# -- as published by the Free Software Foundation; either version 2 of
+# -- the License, or (at your option) any later version.
+# -- for detail see the LICENCE text file.
+# --
+# -- This program is distributed in the hope that it will be useful,
+# -- but WITHOUT ANY WARRANTY; without even the implied warranty of
+# -- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# -- GNU Library General Public License for more details.
+# --
+# -- You should have received a copy of the GNU Library General Public
+# -- License along with this program; if not, write to the Free Software
+# -- Foundation, Inc.,
+# -- 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+
 #
 # -- Windows Powershell install conda to $env:USERPROFILE\Miniforge (one-time)
 #   curl.exe -L -o miniforge.exe https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe
@@ -18,13 +41,10 @@
 #   conda activate cq
 #   python CustomPinHeader_02x09_P2.54mm_Hybrid.py
 #
-
 import cadquery as cq
-from cadquery.vis import show
 
 body_color = cq.Color(0.148, 0.145, 0.145)
 pins_color = cq.Color(0.859, 0.738, 0.496)
-
 n = 9
 pitch = 2.54
 row_pitch = 7.62
